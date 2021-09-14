@@ -752,5 +752,19 @@ void menu()
 
 main()
 {
+	k:
+	int o;
+	system("CLS");
 	menu();
+	system("PAUSE");
+	l:
+	cout<<"Desea realizar alguna otra operacion?\n1.SI\n2.NO"<<endl;
+	cin>>o;
+	switch(o)
+	{
+		case 1: goto k; break; 
+		case 2: cout<<"Nos vemos!"<<endl; system("PAUSE"); break;
+		default: cout<<"Eliga una opcion valida"<<endl; system("PAUSE"); system("CLS"); goto l; break;
+	}
+	
 }
